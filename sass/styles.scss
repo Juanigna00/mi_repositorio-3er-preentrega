@@ -1,0 +1,191 @@
+@import "variableGlobal";
+@import "fuentes";
+@import "generales";
+@import "header";
+
+@media  (min-width: 320px){
+
+
+    .tituloIndex {
+        font-weight: 800;
+        font-size: 60px;
+        text-align: center;
+        color: black;
+        padding: 35px;
+    }
+
+
+    .subtituloIndex {
+        font-weight: 800;
+        font-size: 40px;
+        text-align: center;
+        color: black;
+        padding: 35px;
+    }
+
+    .contenedor{
+        position: relative;
+        left: 25px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        "img1 img1"
+        "text1 text1"
+        "img2 img2"
+        "text2 text2";
+    }
+    .caja{
+        max-width: calc(100% - 60px);
+    }
+    .caja img{
+        max-width: 100%;
+    }
+    .caja1 {
+        grid-area: text1;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        font-size: 40px;
+    }
+
+    .caja2 {
+        grid-area: img1;
+        justify-content: center;
+    }
+
+    .caja3 {
+        grid-area: text2;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        font-size: 40px;
+    }
+    .caja4 {
+        grid-area: img2;
+        justify-content: center;
+    }
+
+    footer {
+        max-width: 100%;
+        background-color: #CCCCCC;
+        flex-direction: column;
+        font-size: 35px
+    }
+
+    footer .logosFooter {
+        cursor: pointer;
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    nav {
+        grid-area: nav;
+    }
+
+    .titulos {
+        grid-area: titulos;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    /* .descripcion{
+        position: relative;
+        left: 25px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    } */
+
+    .quienesSomos{
+        font-weight: 800;
+        font-size: 60px;
+        text-align: center;
+        color: black;
+        padding: 35px;
+        grid-area: quienes;
+    }
+
+    .parrafoQS{
+        font-size: 35px;
+        grid-area: parrafo;
+    }
+
+    .imagenSuite{
+        font-size: 40px;
+        grid-area: imagensuite;
+        gap: 15px;
+    }
+
+    .imagenHotel{
+        font-size: 40px;
+        grid-area: imagenhuite;
+        gap: 15px;
+    }
+
+    .descripcion{
+        display: grid;
+        grid-template-areas:
+        "quienes"
+        "parrafo"
+        "imagensuite"
+        "imagenhotel";
+    }
+
+    .tituloGaleria{
+        font-weight: 800;
+        font-size: 60px;
+        text-align: center;
+        color: black;
+        padding: 20px;
+        grid-area: titulogaleria;
+    }
+
+    .container{
+        min-width: 100vh;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+
+
+
+
+
+
+
+}
+
+@media  (min-width: 768px){
+    .tituloIndex{
+        padding: 5px;
+    }
+    header .nav-links li {
+        width: calc(25% - 45px);
+        display: inline-block;
+        padding: 0 20px;
+    }
+    header .nav-links a {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        color: black;
+        text-decoration: none;
+    }
+}
+@media  (min-width: 1024px){
+    .contenedor{
+        grid-template-areas: 
+        "img1 text1"
+        "text2 img2"
+    }
+    .caja2 .caja4{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+} 
